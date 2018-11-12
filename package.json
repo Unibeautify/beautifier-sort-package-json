@@ -1,0 +1,64 @@
+{
+  "name": "@unibeautify/beautifier-sort-package-json",
+  "version": "0.0.1",
+  "description": "sort-package-json beautifier for Unibeautify",
+  "keywords": [
+    "beautifier",
+    "npm",
+    "sort-package-json",
+    "unibeautify",
+    "sort",
+    "package.json",
+    "package"
+  ],
+  "homepage":
+    "git+https://github.com/Unibeautify/beautifier-sort-package-json#readme",
+  "bugs": {
+    "url": "https://github.com/Unibeautify/beautifier-sort-package-json/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unibeautify/beautifier-sort-package-json.git"
+  },
+  "license": "MIT",
+  "author": "Glavin Wiechert",
+  "contributors": [
+    {
+      "name": "Marvin Heilemann",
+      "email": "marvin.heilemann+github@googlemail.com",
+      "url": "https://marvin.digital/"
+    }
+  ],
+  "main": "dist/src/index.js",
+  "typings": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rimraf dist",
+    "compile": "tsc",
+    "jest": "jest",
+    "lint": "tslint '{src,test}/**/*.ts'",
+    "prepublishOnly": "npm run build",
+    "test": "npm run build && npm run lint && npm run jest"
+  },
+  "dependencies": {
+    "read-pkg-up": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "23.3.9",
+    "@types/node": "10.12.5",
+    "@types/read-pkg-up": "3.0.1",
+    "jest": "23.6.0",
+    "rimraf": "2.6.2",
+    "sort-package-json": "1.16.0",
+    "ts-jest": "23.10.4",
+    "tslint": "5.11.0",
+    "tslint-clean-code": "0.2.9",
+    "tslint-microsoft-contrib": "5.2.1",
+    "typescript": "3.1.6",
+    "unibeautify": "0.17.0"
+  },
+  "peerDependencies": {
+    "sort-package-json": "^1.16.0",
+    "unibeautify": ">= 0.12.1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "target": "ES2017",
+    "declaration": true,
+    "moduleResolution": "node",
+    "outDir": "./dist/",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/@types/*"]
+    }
+  },
+  "compileOnSave": true,
+  "exclude": ["node_modules", "./dist/"]
+}
