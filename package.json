@@ -11,8 +11,7 @@
     "package.json",
     "package"
   ],
-  "homepage":
-    "git+https://github.com/Unibeautify/beautifier-sort-package-json#readme",
+  "homepage": "git+https://github.com/Unibeautify/beautifier-sort-package-json#readme",
   "bugs": {
     "url": "https://github.com/Unibeautify/beautifier-sort-package-json/issues"
   },
