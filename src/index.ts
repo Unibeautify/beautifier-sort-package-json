@@ -2,9 +2,9 @@ import {
   Beautifier,
   Language,
   BeautifierBeautifyData,
+  NodeDependency,
   DependencyType,
 } from "unibeautify";
-import { sortPackageJson } from "sort-package-json";
 import * as readPkgUp from "read-pkg-up";
 import * as path from "path";
 import * as fs from "fs";
@@ -45,6 +45,9 @@ export const beautifier: Beautifier = {
     beautifierConfig,
   }: BeautifierBeautifyData) {
     return new Promise<string>((resolve, reject) => {
+      const { sortPackageJson } = dependencies.get<NodeDependency>(
+        "sort-package-json"
+      ).package;
       if (!filePath) {
         resolve(text);
       }
